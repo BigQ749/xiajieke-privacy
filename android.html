@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <title>下节课隐私政策</title>
+  <style>
+    :root { color-scheme: light; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: #f2f2f7; color: #1d1d1f; font: 16px/1.75 "Noto Sans SC", "Microsoft YaHei", sans-serif; }
+    main { max-width: 42rem; margin: 0 auto; padding: 1.5rem 1.25rem 3rem; }
+    h1 { font-size: 1.6rem; margin: 0 0 .3rem; }
+    h2 { font-size: 1.05rem; margin: 1.6rem 0 .3rem; }
+    p, li { color: #3c4043; }
+    a { color: #1a73e8; overflow-wrap: anywhere; }
+    .meta { color: #5f6368; font-size: 14px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>下节课隐私政策</h1>
+    <p class="meta">更新日期：2026年10月19日。适用于安卓应用“下节课”（包名 com.qisaijun.xiajieke）。开发者：齐赛军。</p>
+    <p>本政策说明安卓版本如何处理信息。应用不设账号，不接入广告、分析或其他商业第三方 SDK，也没有自有服务器。</p>
+
+    <h2>处理的信息及用途</h2>
+    <ul>
+      <li>你手动填写或从分享码导入的课程内容：课程名、教师、教室、星期、节次、周次和时间，用于本机显示和编辑课表。</li>
+      <li>学期名称、开学日期和作息时间，用于计算当前教学周并显示课程。</li>
+      <li>你主动选择或拍摄的课表图片，仅用于识别图片中的文字或二维码。图片不会由本应用上传。拍摄的临时图片在应用缓存中处理，识别完成后删除；你从系统选择器选择的图片由系统按本次选择临时提供。</li>
+      <li>应用不读取设备标识、通讯录、位置、麦克风数据，也不运行陀螺仪、加速度计、方向或运动传感器。</li>
+    </ul>
+
+    <h2>网络与第三方组件</h2>
+    <p>AndroidManifest 声明的权限清单只有 <code>android.permission.INTERNET</code>。这是普通网络权限，不会弹出系统运行时授权框。手动录入、编辑课表、生成或解析课表分享码、生成二维码均在本机完成。</p>
+    <p>开源组件 Tesseract.js（版本 6.0.1）、WebAssembly 识别引擎和简体中文模型随应用安装。你选择课表图片后，文字与格子识别完全在本机执行，无需连接 OCR 服务；图片、课程内容和分享码不会上传。二维码识别也在本机完成。用户主动打开在线隐私政策链接时，系统浏览器会访问对应网页。</p>
+    <p>本应用不声明相机、麦克风、存储、相册、定位、通知或精确闹钟权限。你点“拍照”时，应用会在用途说明后调用系统相机应用拍摄课表；相机权限由系统相机应用管理，本应用不直接请求 CAMERA 权限。选择相册或文件时，系统选择器只把你本次选中的图片提供给应用，无需读取整个相册或申请存储权限。</p>
+
+    <h2>存储位置与期限</h2>
+    <p>课程与作息保存在本机 WebView 的应用数据中；OCR 引擎和语言模型可能保存在 WebView 本机缓存中。应用不建立云端副本。清空课程可在“关于”中操作；清除应用数据或卸载应用会删除本机记录和缓存。</p>
+
+    <h2>权限、传感器与功能清单</h2>
+    <ul>
+      <li>Android 权限：仅 INTERNET，用于用户主动打开在线政策页面等系统浏览器跳转；课表功能与 OCR 识别不依赖网络服务。</li>
+      <li>相机：仅通过系统相机应用响应用户拍照操作；应用不申请 CAMERA 运行时权限。</li>
+      <li>存储/相册：通过系统文件选择器访问用户选定的单个图片；不申请存储或照片运行时权限。</li>
+      <li>未使用：麦克风、定位、通知、精确闹钟、陀螺仪、加速度计、方向传感器和运动传感器。</li>
+      <li>第三方 SDK：无商业第三方 SDK；OCR 使用随应用安装的 Tesseract.js 开源组件和中文模型。</li>
+    </ul>
+
+    <h2>你的权利与撤回同意</h2>
+    <p>你可以在应用“关于”中查看本政策和用户协议、清空课表，或点击“撤回隐私同意并退出”。撤回后应用清除同意标记并退出；再次打开时会重新展示同意提示。也可以通过系统设置清除应用数据或卸载应用。</p>
+
+    <h2>儿童与联系我们</h2>
+    <p>本应用不面向 14 岁以下儿童提供注册或账号服务。如对本政策有疑问，请联系开发者：齐赛军，邮箱 <a href="mailto:saijunqi@gmail.com">saijunqi@gmail.com</a>，也可通过华为应用市场开发者联系方式联系。</p>
+
+    <h2>在线政策</h2>
+    <p><a href="https://agreement-drcn.hispace.dbankcloud.cn/index.html?lang=zh&amp;agreementId=2049639798859163584">在线隐私政策（HTTPS）</a></p>
+  <h2>你的权利与联系</h2><p>你可在应用内查阅、修改和删除本机记录；清除系统应用数据或卸载应用可移除应用私有数据。撤回同意不会自动删除已有记录。应用不设账号，开发者没有服务器副本，不能远程读取、复制或删除你的本机记录。对于可由开发者处理的隐私请求或投诉，请联系开发者齐赛军：<a href="mailto:saijunqi@gmail.com">saijunqi@gmail.com</a>；我们将在收到请求后15个工作日内答复。</p><h2>网页访问</h2><p>本政策网页由 GitHub Pages 托管；你主动打开公网政策时，浏览器和托管方可能按各自服务规则处理网页访问所必需的技术信息。应用不会把本机记录附带发送给政策网页。</p></main>
+</body>
+</html>
